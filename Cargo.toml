@@ -1,0 +1,18 @@
+[package]
+name = "v2"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+reqwest = { version = "0.11.9", features = ["json", "blocking","socks"] }
+tokio = { version = "1.35.1", features = ["full"] }
+regex = { version = "1.10.2"}
+select = { version = "0.6.0"}
+sqlite = { version = "0.32.0"}
+lazy_static = { version = "1.4.0"}
+
+[[bin]]
+name = "v2"
+path = "main.rs"
